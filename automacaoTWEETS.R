@@ -140,7 +140,7 @@ atualizaTWEETS_principal <- function(){
   # Primeiramente é preciso checar se a tabelaTWEET_principal existe. 
   arquivos_PASTA <- list.files()
   
-  # Se a tabelaTWEET_principal existe, executa o código, caso contrario não executa.
+  # Se a tabelaTWEET_principal existe, executa o código, caso contrário não executa.
   existeTABELA <- arquivos_PASTA %>% 
     str_detect("tabelaTWEET_principal.csv") %>% 
     sum()
@@ -154,7 +154,7 @@ atualizaTWEETS_principal <- function(){
   tabelaTWEET_novo <- tabelaTWEET_novo %>% 
     limpaTWEET()
   
-  # Para manter a compatibilidade entre as colunas, vamos salvar o TWEET NOVO, lê-lo novamente.
+  # Para manter a compatibilidade entre as colunas, vamos salvar o TWEET NOVO e lê-lo novamente.
   tabelaTWEET_novo %>% 
     write_csv("tabelaTEMPORARIA.csv")
   
