@@ -25,11 +25,7 @@ puxaTWEET <- function(){
   
   # Acesso ao Twitter API.
   create_token(
-    app = "RPrepositionTestApp",
-    consumer_key <- "WE33fxF5SDQeOaCO1wbqpIzog",
-    consumer_secret <-"MZ5Gukb4ZD8fO76fQ02xv0iOrejtx4CEzK2irTj1qQE2EOymtB",
-    access_token <- "1100203825527287809-QDgVkxQ9nCZL6bG0UQQqtT3AHE1007",
-    access_secret <- "ihroRFd0Nm9PDD0JMOOdixmw7jBmxj83xI0s2ts9FBnIR"
+
   )
   
   # Delimitar que se deve extrair somente tweets publicados no Brasil.
